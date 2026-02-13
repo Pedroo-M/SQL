@@ -14,5 +14,5 @@ values
 (3, 'Pedro', 18),
 (4, 'Ana', 16);
     select * from alunos
-    where idade >= 17 and idade <= 19
+    where idade between 17 and 19
     order by nome asc ;
