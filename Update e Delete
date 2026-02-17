@@ -1,0 +1,23 @@
+create database teste;
+
+use teste;
+
+    create table alunos (
+    id INT PRIMARY KEY,
+    nome VARCHAR(100),
+    idade INT
+);
+    insert into alunos (id, nome, idade)
+values
+(1, 'Lucas', 17),
+(2, 'Ana', 19),
+(3, 'Pedro', 18),
+(4, 'Ana', 16),
+(5, 'Paulo', 18);
+    update alunos
+    set idade = 18
+    where nome = 'Lucas';
+    select nome, idade from alunos;
+    delete from alunos
+    where idade < 17;
+    select nome, idade from alunos;
